@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Calculater</title>
+</head>
+<body>
+    <div class="calculator">
+
+        <input type="text" class="calculator-screen" value="" id="input" disabled />  
+      
+        <div class="calculator-keys">
+      
+          <button type="button" id="plus" class="operator" value="+" onclick = "display('+')">+</button>
+          <button type="button" id="minus" class="operator" value="-" onclick = "display('-')">-</button>
+          <button type="button" id="multiply" class="operator" value="*" onclick = "display('*')">&times;</button>
+          <button type="button" id="divide" class="operator" value="/" onclick = "display('/')">&divide;</button>
+      
+          <button type="button" value="7" id="block7" onclick = "display('7')">7</button>
+          <button type="button" value="8" id="block8" onclick = "display('8')">8</button>
+          <button type="button" value="9" id="block9" onclick = "display('9')">9</button>
+      
+      
+          <button type="button" value="4" id="block4" onclick = "display('4')">4</button>
+          <button type="button" value="5" id="block5" onclick = "display('5')">5</button>
+          <button type="button" value="6" id="block6" onclick = "display('6')">6</button>
+      
+      
+          <button type="button" value="1" id="block1" onclick = "display('1')">1</button>
+          <button type="button" value="2" id="block2" onclick = "display('2')">2</button>
+          <button type="button" value="3" id="block3" onclick = "display('3')">3</button>
+      
+      
+          <button type="button" value="0" id="block0" onclick = "display('0')" >0</button>
+          <button type="button" id="dot" class="decimal" value="." onclick = "display('.')">.</button>
+          <button type="button" id="clr" class="all-clear" value="all-clear" onclick = "clearScreen()" >AC</button>
+      
+          <button type="button" id="ans" class="equal-sign" value="=" onclick = "calculate()">=</button>
+      
+        </div>
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>
